@@ -1,15 +1,15 @@
-package test.java.edu.teamrocket.bicipalma.bicicleta;
+package edu.teamrocket.bicipalma.bicicleta;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.junit.jupiter.api.Before;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 public class BicicletaTest {
 
     private static Bicicleta bici = null;
 
-    @Before
+    @BeforeAll
     public void setup_bicicleta() {
         // ARRANGE
         bici = new Bicicleta(101);
