@@ -1,0 +1,1 @@
+package edu.teamrocket.bicipalma.main.domain.bicicleta;
