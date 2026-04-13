@@ -1,4 +1,4 @@
-package edu.teamrocket.bicipalma.main.domain.bicicleta;
+package edu.teamrocket.bicipalma.domain.bicicleta;
 
 public class Bicicleta implements Movil {
 
