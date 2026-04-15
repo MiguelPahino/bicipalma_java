@@ -3,6 +3,7 @@ package edu.teamrocket.bicipalma.domain.estacion;
 import java.util.Arrays;
 import java.util.Optional;
 
+import edu.teamrocket.bicipalma.domain.bicicleta.Bicicleta;
 import edu.teamrocket.bicipalma.domain.bicicleta.Movil;
 import edu.teamrocket.bicipalma.domain.tarjetausuario.Autenticacion;
 
@@ -87,10 +88,12 @@ private static void mensajeNoBiciDisponible() {
 }
 
 public void consultarAnclajes() {
-		Arrays.stream(anclajes()).map(a -> Optional.ofNullable(a.getBici()))
-								 .forEach(bici -> System.out.print("Anclaje " + 
-								 (bici.isPresent()? bici.get(): "libre") 
-				                + '\n'));
+
+	for(int i = 0; i < anclajes().length;i++){
+        Optional<Movil> bici = Optional.ofNullable(anclajes()[i].getBici());
+        System.out.println("Anclaje " + bici.map(Movil::toString).orElse("libre"));
+    }
+
 	}
 
 @Override
