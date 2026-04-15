@@ -3,7 +3,6 @@ package edu.teamrocket.bicipalma.domain.estacion;
 import java.util.Arrays;
 import java.util.Optional;
 
-import edu.teamrocket.bicipalma.domain.bicicleta.Bicicleta;
 import edu.teamrocket.bicipalma.domain.bicicleta.Movil;
 import edu.teamrocket.bicipalma.domain.tarjetausuario.Autenticacion;
 
