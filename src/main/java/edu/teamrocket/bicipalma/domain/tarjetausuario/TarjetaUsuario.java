@@ -4,7 +4,7 @@ public class TarjetaUsuario implements Autenticacion {
     private String id;
     private boolean activada = false;
 
-    TarjetaUsuario(String idInicio, Boolean activo) {
+    public TarjetaUsuario(String idInicio, Boolean activo) {
         this.id = idInicio;
         this.activada = activo;
     }

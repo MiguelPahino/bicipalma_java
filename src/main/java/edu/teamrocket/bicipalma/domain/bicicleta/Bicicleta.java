@@ -4,17 +4,17 @@ public class Bicicleta implements Movil {
 
     private Integer id;
 
-    Bicicleta(Integer id) {
+    public Bicicleta(Integer id) {
         this.id = id;
     }
 
     @Override
     public Integer getId() {
-        return this.id;
+        return this.id.intValue();
     }
 
     @Override
     public String toString() {
-        return Integer.toString(getId());
+        return this.id.toString();
     }
 }
