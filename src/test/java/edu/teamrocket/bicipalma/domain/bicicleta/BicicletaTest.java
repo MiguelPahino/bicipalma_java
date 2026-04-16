@@ -1,4 +1,4 @@
-package edu.teamrocket.bicipalma.bicicleta;
+package edu.teamrocket.bicipalma.domain.bicicleta;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -10,11 +10,11 @@ public class BicicletaTest {
     private static Bicicleta bici = null;
 
     @BeforeAll
-    public void setup_bicicleta() {
+    public static void setup_bicicleta() {
         // ARRANGE
         bici = new Bicicleta(101);
     }
-    
+
     @Test
     public void test_constructor_bicicleta() {
         // ARRANGE
